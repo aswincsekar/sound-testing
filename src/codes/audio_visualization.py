@@ -1,10 +1,11 @@
 import librosa
 import numpy as np
-import matplotlib.pyplot as plt
+
 import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
 from matplotlib.pyplot import specgram
 
-matplotlib.use('Agg')
 
 def load_sound_files(file_paths):
     raw_sounds = []
